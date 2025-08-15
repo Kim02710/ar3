@@ -1,0 +1,8 @@
+Model Information:
+* title:	Squirtle
+* source:	https://sketchfab.com/3d-models/squirtle-2a8be2e3fa9146a7804c03ea63bcd870
+* author:	Eleanie (https://sketchfab.com/Eleanie)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
