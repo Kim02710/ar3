@@ -23,6 +23,25 @@
             z-index: 100;
         }
     </style>
+    <script>
+      AFRAME.registerComponent('markerhandler', {
+        init: function () {
+          this.el.addEventListener('markerFound', () => {
+            var check = this.el.getAttribute("url");
+            alert(check);
+            // document.getElementById('show1').style.bottom = "0";
+            // document.getElementById('show2').style.bottom = "-110vh";
+            // document.getElementById('show3').style.bottom = "-110vh";
+          });
+          
+          this.el.addEventListener('markerLost', () => {
+            // document.getElementById('show1').style.bottom = "-110vh";
+            // document.getElementById('show2').style.bottom = "-110vh";
+            // document.getElementById('show3').style.bottom = "-110vh";
+          });
+        }
+      });
+    </script>
 </head>
 <body>
     <div id="info">
@@ -36,6 +55,7 @@
       arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
 
         <a-nft
+            markerhandler
             type="nft"
             url="ar3/purplebear"
             smooth="true"
@@ -44,13 +64,13 @@
             smoothThreshold="5"
         >
 
-            <a-box position="-100 10 0" rotation="" color="yellow" shadow="" material="" geometry="" scale="50 5 50"></a-box>
+            <!-- <a-box position="-100 10 0" rotation="" color="yellow" shadow="" material="" geometry="" scale="50 5 50"></a-box>
             <a-entity 
                 gltf-model="url(arscan/assets/squirtle/scene.gltf)"
                 scale="0.1 0.1 0.1"
                 position="0 0.5 0"
                 rotation="0 0 0"
-            ></a-entity>
+            ></a-entity> -->
         </a-nft>
 
         <a-entity camera></a-entity>
